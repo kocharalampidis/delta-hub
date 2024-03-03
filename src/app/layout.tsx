@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <div className="dark:bg-boxdark-2 dark:text-bodydark">
+        {/* {loading ? <Loader /> : children} */}
+        {children}
+      </div>
     </html>
   );
 }
